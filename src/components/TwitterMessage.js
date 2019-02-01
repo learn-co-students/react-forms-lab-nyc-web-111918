@@ -29,7 +29,7 @@ handleChange = e => {
     return (
       <div>
         <strong>Your message:</strong>
-        <input type="text" onChange={this.handleChange}  /*if you want to prevent negative number you can use maxLength="140" whatever limit you want. */  />
+        <input type="text" onChange={this.handleChange} value={this.state.value}  /*if you want to prevent negative number you can use maxLength="140" whatever limit you want. */  />
         <h2>Remaining Chars:{this.props.maxChars - this.state.value.length}</h2>
       </div>
     );
